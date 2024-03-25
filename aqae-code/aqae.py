@@ -10,7 +10,7 @@
 # copyright notice, and modified files need to carry a notice indicating
 # that they have been altered from the originals.
 
-"""Our Quantum Amplitude Estimation Algorithm."""
+"""Accelerated Quantum Amplitude Estimation Algorithm."""
 
 from __future__ import annotations
 from typing import cast, Callable, Tuple
@@ -26,11 +26,11 @@ from qiskit_algorithms.amplitude_estimators.amplitude_estimator import Amplitude
 from qiskit_algorithms.amplitude_estimators.estimation_problem import EstimationProblem
 from qiskit_algorithms.exceptions import AlgorithmError
 
-class OurAmplitudeEstimation(AmplitudeEstimator):
-    r"""The Iterative Amplitude Estimation algorithm.
+class AcceleratedAmplitudeEstimation(AmplitudeEstimator):
+    r"""The Accelerated Amplitude Estimation algorithm.
 
-    This class implements the Iterative Quantum Amplitude Estimation (IQAE) algorithm, proposed
-    in [1]. The output of the algorithm is an estimate that,
+    This class implements the Accelerated Quantum Amplitude Estimation (AQAE) algorithm, proposed
+    in [3]. The output of the algorithm is an estimate that,
     with at least probability :math:`1 - \alpha`, differs by epsilon to the target value, where
     both alpha and epsilon can be specified.
 
@@ -45,6 +45,7 @@ class OurAmplitudeEstimation(AmplitudeEstimator):
         [2]: Brassard, G., Hoyer, P., Mosca, M., & Tapp, A. (2000).
              Quantum Amplitude Amplification and Estimation.
              `arXiv:quant-ph/0005055 <http://arxiv.org/abs/quant-ph/0005055>`_.
+        [3]: TBC
              
     This code is based on a copy of iae.py, which is part of the qiskit_algorithms package. See https://github.com/qiskit-community/qiskit-algorithms .
     """
