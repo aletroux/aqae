@@ -1,4 +1,4 @@
-# aqae
-Advanced quantum amplitude estimation
+# Advanced quantum amplitude estimation
 
-Some information on the paper will be added here in due course.
+See the paper [Accelerated Quantum Amplitude Estimation
+without QFT](https://arxiv.org/abs/2407.16795) by Alet Roux and Tomasz Zastawniak for more details.
